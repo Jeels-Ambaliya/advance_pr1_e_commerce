@@ -1,3 +1,4 @@
+import 'package:advance_pr1_e_commerce/views/screens/cart.dart';
 import 'package:advance_pr1_e_commerce/views/screens/collection.dart';
 import 'package:advance_pr1_e_commerce/views/screens/favourite_page.dart';
 import 'package:advance_pr1_e_commerce/views/screens/homePage.dart';
@@ -50,9 +51,18 @@ class _E_CommerceState extends State<E_Commerce> {
                 const SizedBox(
                   width: 16,
                 ),
-                const Icon(
-                  CupertinoIcons.cart_fill,
-                  size: 30,
+                IconButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const Cart_Page(),
+                      ),
+                    );
+                  },
+                  icon: const Icon(
+                    CupertinoIcons.cart_fill,
+                    size: 30,
+                  ),
                 ),
                 const SizedBox(
                   width: 16,

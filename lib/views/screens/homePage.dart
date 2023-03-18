@@ -39,6 +39,7 @@ class _Home_PageState extends State<Home_Page> {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => Info(
+                              Id: P['products'][i]['id'],
                               Pic1: P['products'][i]['images'][0],
                               Pic2: P['products'][i]['images'][1],
                               Pic3: P['products'][i]['images'][2],
